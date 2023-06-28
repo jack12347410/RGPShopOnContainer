@@ -1,0 +1,37 @@
+
+networks:
+    frontend:
+    backend:
+       
+services:
+    catalog: 
+        build:
+            context: .\CatalogApi
+            dockerfile: Dockerfile
+        image: rpgshop/catalog
+        environment:
+             - DatabaseServer=mssqlserver
+             - DatabaseName=CatalogDb
+             - DatabaseUser=sa
+             - DatabasePassword=aa123456..
+             - ExternalCatalogBaseUrl=http://${RPGSHOP_EXTERNAL_DNS_NAME_OR_IP}:7000
+        container_name: rpgcatalogapi
+        ports:
+             - "7000:80"
+        networks:
+            - backend
+            - frontend
+        depends_on:
+            - mssqlserver
+
+    mssqlserver:
+        image: "mcr.microsoft.com/mssql/server:2019-latest"
+        ports:
+            - "1445:1433"
+    
+        container_name: rpgmssqlcontainer
+        environment:
+            - ACCEPT_EULA=Y
+            - SA_PASSWORD=aa123456..
+        networks:
+            - backend
