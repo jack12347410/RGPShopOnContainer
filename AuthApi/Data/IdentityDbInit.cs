@@ -19,11 +19,10 @@ namespace AuthApi.Data
         public static async Task Initialize(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             context.Database.Migrate();
-            if (context.Users.Any(x => x.UserName.Equals("test@mail.com"))) return;
+            string user = "test@test.com";
+            string password = "P@ssword1";//需大小寫英文、數字、符號
 
-            string user = "test@mail.com";
-            string password = "p@a#$ss%word";
-
+            if (context.Users.Any(x => x.UserName.Equals(user))) return;
             await userManager.CreateAsync(new ApplicationUser { UserName = user, EmailConfirmed = true }, password);
         }
     }

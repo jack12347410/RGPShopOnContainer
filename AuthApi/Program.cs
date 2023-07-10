@@ -29,6 +29,7 @@ namespace AuthApi
                 {
                     var context = services.GetRequiredService<ApplicationDbContext>();
                     var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+                    IdentityDbInit.Initialize(context, userManager).Wait();
                 }
                 catch(Exception ex)
                 {
