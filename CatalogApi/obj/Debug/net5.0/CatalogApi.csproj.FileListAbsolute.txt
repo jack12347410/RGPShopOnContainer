@@ -57,10 +57,5 @@ D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\ref\CatalogA
 D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\CatalogApi.pdb
 D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\CatalogApi.genruntimeconfig.cache
 D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\CatalogApi.csproj.AssemblyReference.cache
-D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\bin\Debug\net5.0\CatalogApi.StaticWebAssets.xml
-D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\staticwebassets\CatalogApi.StaticWebAssets.Pack.cache
-D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\staticwebassets\msbuild.CatalogApi.Microsoft.AspNetCore.StaticWebAssets.props
-D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\staticwebassets\msbuild.build.CatalogApi.props
-D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.CatalogApi.props
-D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.CatalogApi.props
-D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\refint\CatalogApi.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\bin\Debug\net5.0\ref\CatalogApi.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\staticwebassets\CatalogApi.StaticWebAssets.xml

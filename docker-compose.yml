@@ -4,6 +4,19 @@ networks:
     backend:
        
 services:
+    webmvc: 
+        build:
+            context: .\WebMvc
+            dockerfile: Dockerfile
+        environment:
+            - CatalogUrl=http://catalog
+        container_name: rpgwebmvc
+        ports: 
+            - "7500:80"
+        networks:
+            - frontend
+        depends_on:
+            - catalog
     catalog: 
         build:
             context: .\CatalogApi

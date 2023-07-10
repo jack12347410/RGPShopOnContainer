@@ -22,13 +22,16 @@ namespace CatalogApi.Controllers
         [Route("{fileName}")]
         public IActionResult GetImage(string fileName)
         {
-            var webRoot = _env.ContentRootPath + "\\wwwroot\\";
+            //var webRoot = _env.ContentRootPath + "\\wwwroot\\";
+            var webRoot = _env.WebRootPath;
             var path = Path.Combine(webRoot + "/Pictures/", fileName);
             if (!System.IO.File.Exists(path))
             {
-                path = Path.Combine(webRoot + "/Pictures/", "0.png");
+                //path = Path.Combine(webRoot + "/Pictures/", "0.png");
+                return NotFound(path);
             }
             var buffer = System.IO.File.ReadAllBytes(path);
+
             return File(buffer, "image/png");
         }
     }

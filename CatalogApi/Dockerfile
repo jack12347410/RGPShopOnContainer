@@ -34,7 +34,7 @@ RUN dotnet publish -o /out/ -c Release
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 
 COPY --from=build /out /app/
-
+#COPY ./wwwroot ./wwwroot  # Add this line to copy wwwroot folder
 WORKDIR /app
 
 ENTRYPOINT ["dotnet", "CatalogApi.dll"]
