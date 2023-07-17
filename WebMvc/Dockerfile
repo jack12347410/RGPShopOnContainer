@@ -25,12 +25,17 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 
 WORKDIR /code
 EXPOSE 80
+EXPOSE 443
 
 COPY . .
 
 RUN dotnet restore
 
 RUN dotnet publish -o /out/ -c Release
+
+RUN dotnet dev-certs https --clean
+RUN dotnet dev-certs https -ep ./WebMvc.pfx  -p crypticpassword
+RUN mv ./WebMvc.pfx /out
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 

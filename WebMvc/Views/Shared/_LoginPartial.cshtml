@@ -6,7 +6,7 @@
         @User.FindFirst(x => x.Type == "preferred_username").Value
     </li>
     <li class="pull-right">
-        <form asp-area="" asp-controller="Account" asp-action="SignOut" method="post" id="logoutForm">
+        <form asp-area="" asp-controller="Account" asp-action="LogOut" method="post" id="logoutForm">
             <a href="javascript:document.getElementById('logoutForm').submit()">
                 Log Out
             </a>
@@ -16,7 +16,7 @@
 else
 {
     <li>
-        <a asp-area="" asp-controller="Account" asp-action="SignIn">
+        <a asp-area="" asp-controller="Account" asp-action="LogIn">
             Login
         </a>
     </li>

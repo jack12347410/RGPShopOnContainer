@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L4GYJ1OirAycp6HyNX+yDCvZSN58aGy7BdkzjrSa5BkfKHyiDCpzDBAzSvOXf7ZRwz4dMsfYWQCNvRMN3skAKQ==",
+  "dgSpecHash": "nvuMhgE//tw8zqi2jVIf8EHm/hmIOKdxhhHnAKiKr6Rb/LUABGaA87TqAW68VXTVt3X+YO/rcwTd5b3njOS7AA==",
   "success": true,
   "projectFilePath": "D:\\VisualStudioTestDemo\\RGPShop\\RGPShop\\AuthApi\\AuthApi.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "C:\\Users\\m5963\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.6.0\\microsoft.identitymodel.tokens.5.6.0.nupkg.sha512",
     "C:\\Users\\m5963\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\m5963\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\m5963\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\m5963\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\m5963\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\m5963\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",

@@ -10,7 +10,6 @@ D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\WebMvc.pdb
 D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\WebMvc.Views.dll
 D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\WebMvc.Views.pdb
 D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\Newtonsoft.Json.dll
-D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\WebMvc.csproj.AssemblyReference.cache
 D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\WebMvc.GeneratedMSBuildEditorConfig.editorconfig
 D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\WebMvc.AssemblyInfoInputs.cache
 D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\WebMvc.AssemblyInfo.cs

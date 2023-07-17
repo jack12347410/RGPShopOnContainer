@@ -56,6 +56,5 @@ D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\CatalogApi.d
 D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\ref\CatalogApi.dll
 D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\CatalogApi.pdb
 D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\CatalogApi.genruntimeconfig.cache
-D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\CatalogApi.csproj.AssemblyReference.cache
 D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\bin\Debug\net5.0\ref\CatalogApi.dll
 D:\VisualStudioTestDemo\RGPShop\RGPShop\CatalogApi\obj\Debug\net5.0\staticwebassets\CatalogApi.StaticWebAssets.xml
