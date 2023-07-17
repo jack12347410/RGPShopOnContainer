@@ -13,7 +13,7 @@ namespace WebMvc.Infrastructure
         private HttpClient _client;
         private ILogger<CustomHttpClient> _logger;
 
-        public CustomHttpClient(HttpClient client, ILogger<CustomHttpClient> logger)
+        public CustomHttpClient(ILogger<CustomHttpClient> logger)
         {
             _client = new HttpClient();
             _logger = logger;

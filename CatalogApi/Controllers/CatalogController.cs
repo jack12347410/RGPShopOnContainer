@@ -3,6 +3,7 @@ using CatalogApi.Domain;
 using CatalogApi.Dtos;
 using CatalogApi.Services;
 using CatalogApi.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;

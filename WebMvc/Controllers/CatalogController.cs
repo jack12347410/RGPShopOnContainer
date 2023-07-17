@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +40,12 @@ namespace WebMvc.Controllers
             ViewBag.TypesFilterApplied = typesFilterApplied;
 
             return View(vm);
+        }
+
+        [Authorize]
+        public IActionResult About()
+        {
+            return View();
         }
     }
 }

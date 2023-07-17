@@ -72,7 +72,7 @@ namespace AuthApi
             {
                 new Client
                 {
-                    ClientId = "Mvc",
+                    ClientId = "mvc",
                     ClientSecrets = new []{ new Secret("secret".Sha256())},
                     AllowedGrantTypes = GrantTypes.Hybrid,
                     RedirectUris = {$"{clientUrls["Mvc"]}/signin-oidc"},

@@ -2,6 +2,7 @@ using AuthApi.Data;
 using AuthApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -29,7 +30,8 @@ namespace AuthApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(MssqlConnStr()));
+                
+            options.UseSqlServer(MssqlConnStr()));
 
             //身分驗證及授權
             services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -69,22 +71,34 @@ namespace AuthApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseMigrationsEndPoint();
+                //app.UseMigrationsEndPoint();
+                app.UseDatabaseErrorPage();//當發生資料庫錯誤時，會顯示相關的資料庫錯誤訊息。
             }
             else
             {
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                app.UseHsts();//啟用 HTTP 嚴格傳輸安全 (HTTP Strict Transport Security，HSTS)，以增加應用程式的安全性。該設定在生產環境中建議使用
             }
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseHttpsRedirection();//將 HTTP 請求重新導向至 HTTPS，以確保通訊過程中的安全性。
+            app.UseStaticFiles();//啟用使用靜態檔案 (如圖片、JavaScript、CSS 等) 的能力，這些檔案可以直接由瀏覽器存取。
+
+            app.UseCookiePolicy(new CookiePolicyOptions()
+            {
+                //SameSite 是一種安全性機制，用於限制跨站請求偽造攻擊 (Cross-Site Request Forgery，CSRF)。
+                MinimumSameSitePolicy = SameSiteMode.Lax,
+            });
 
             app.UseRouting();
 
-            app.UseIdentityServer();
+            app.UseIdentityServer();//啟用 IdentityServer，用於提供身份驗證和授權服務。
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.Use(async (conext, next) =>
+            {
+                await next();
+            });
 
             app.UseEndpoints(endpoints =>
             {

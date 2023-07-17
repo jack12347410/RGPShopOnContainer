@@ -42,3 +42,13 @@ D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\WebMvc.dll
 D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\ref\WebMvc.dll
 D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\WebMvc.pdb
 D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\WebMvc.genruntimeconfig.cache
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\Razor\Views\Catalog\About.cshtml.g.cs
+D:\VisualStudioTestDemo\RGPShop\RGPShop\WebMvc\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
