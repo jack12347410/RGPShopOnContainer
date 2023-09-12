@@ -24,6 +24,7 @@ services:
         depends_on:
             - catalog
             - auth
+
     catalog: 
         build:
             context: .\CatalogApi
@@ -31,6 +32,7 @@ services:
         image: rpgshop/catalog
         environment:
              - DatabaseServer=mssqlserver
+             #- DatabaseServer=${DATABASE_SERVER}
              - DatabaseName=CatalogDb
              - DatabaseUser=sa
              - DatabasePassword=aa123456..
@@ -43,6 +45,7 @@ services:
             - frontend
         depends_on:
             - mssqlserver
+
     auth:
         build: 
             context: .\AuthApi
@@ -51,6 +54,7 @@ services:
         environment: 
             - MvcClient=https://${RPGSHOP_EXTERNAL_DNS_NAME_OR_IP}:7501
             - DatabaseServer=mssqlserver
+            #- DatabaseServer=${DATABASE_SERVER}
             - DatabaseName=AuthDb
             - DatabaseUser=sa
             - DatabasePassword=aa123456..

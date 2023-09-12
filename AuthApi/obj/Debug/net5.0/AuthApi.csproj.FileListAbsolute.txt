@@ -100,5 +100,10 @@ D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\Razor\Views\Sha
 D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\Razor\Views\Shared\_Nav.cshtml.g.cs
 D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\Razor\Views\Shared\_ScopeListItem.cshtml.g.cs
 D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\Razor\Views\Shared\_ValidationSummary.cshtml.g.cs
-D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\bin\Debug\net5.0\ref\AuthApi.dll
 D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\AuthApi.csproj.AssemblyReference.cache
+D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\staticwebassets\AuthApi.StaticWebAssets.Pack.cache
+D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\staticwebassets\msbuild.AuthApi.Microsoft.AspNetCore.StaticWebAssets.props
+D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\staticwebassets\msbuild.build.AuthApi.props
+D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.AuthApi.props
+D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.AuthApi.props
+D:\VisualStudioTestDemo\RGPShop\RGPShop\AuthApi\obj\Debug\net5.0\refint\AuthApi.dll

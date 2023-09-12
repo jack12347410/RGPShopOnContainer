@@ -67,7 +67,7 @@ namespace CatalogApi.Services
         {
             var root = _catalogRepository.FindItemsByCatalogTypeId(catalogTypeId);
 
-            var totalItems = await root.LongCountAsync();
+            var totalItems = root.LongCountAsync();
 
             var itemsOnPage = await root
                 .OrderBy(c => c.Name)
@@ -78,7 +78,7 @@ namespace CatalogApi.Services
 
             var list = itemsOnPage.Select(x => x.ConvertToVM(_settings.Value.ExternalCatalogBaseUrl, _picUrlTmp));
 
-            var result = new PaginatedItemsViewModel<CatalogItemResponseVM>(pageSize, pageIndex, totalItems, list);
+            var result = new PaginatedItemsViewModel<CatalogItemResponseVM>(pageSize, pageIndex, await totalItems, list);
 
             return result;
         }
